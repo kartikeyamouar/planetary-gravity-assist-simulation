@@ -12,11 +12,11 @@ A computational orbital mechanics simulation in Python modeling real-scale plane
   - Performs a trailing-edge hyperbolic flyby, extracting orbital momentum from Jupiter and reversing heliocentric deceleration into positive acceleration without fuel consumption.
 
 ## Governing Equations
-- **$N$-Body Gravitational Force:**
+- **$N$-Body Gravitational Acceleration:**
   $$\vec{a}_i = \sum_{j \neq i} \frac{G M_j}{|\vec{r}_j - \vec{r}_i|^3 + \delta^3} (\vec{r}_j - \vec{r}_i)$$
+
 - **Solar Escape Speed at Radius $r$:**
   $$v_{\text{esc}}(r) = \sqrt{\frac{2 G M_{\odot}}{r}}$$
-
 ## Repository Structure
 - `gravity_assist_simulation.ipynb`: Complete Python notebook containing both normalized 3-body synchronization experiments and real-scale SI Earth–Jupiter trajectory models.
 - `voyager_jupiter_flyby.png`: Real-scale astronomical trajectory plot and heliocentric velocity amplification curve.
